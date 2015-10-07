@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    minitest-retry (0.0.1)
+      minitest (~> 5.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.8.1)
+    rake (10.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest-retry!
+  rake
+
+BUNDLED WITH
+   1.10.5
