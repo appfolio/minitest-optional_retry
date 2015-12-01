@@ -1,25 +1,25 @@
-[![Build Status](https://travis-ci.org/appfolio/minitest-retry.png)](https://travis-ci.org/appfolio/minitest-retry)
-[![Code Climate](https://codeclimate.com/github/appfolio/minitest-retry/badges/gpa.svg)](https://codeclimate.com/github/appfolio/minitest-retry)
-[![Test Coverage](https://codeclimate.com/github/appfolio/minitest-retry/badges/coverage.svg)](https://codeclimate.com/github/appfolio/minitest-retry)
-[![Gem Version](https://badge.fury.io/rb/minitest-retry.svg)](http://badge.fury.io/rb/minitest-retry)
-# minitest-retry
+[![Build Status](https://travis-ci.org/appfolio/minitest-optional_retry.png)](https://travis-ci.org/appfolio/minitest-optional_retry)
+[![Code Climate](https://codeclimate.com/github/appfolio/minitest-optional_retry/badges/gpa.svg)](https://codeclimate.com/github/appfolio/minitest-optional_retry)
+[![Test Coverage](https://codeclimate.com/github/appfolio/minitest-optional_retry/badges/coverage.svg)](https://codeclimate.com/github/appfolio/minitest-optional_retry/coverage)
+[![Gem Version](https://badge.fury.io/rb/minitest-optional_retry.svg)](http://badge.fury.io/rb/minitest-optional_retry)
+# minitest-optional_retry
 
 This plugin extends minitest to automatically rerun failed tests up to twice
 more. If a subsequent run passes, the suite as a whole will pass. This is useful
-to recover from flakey tests.
+to recover from flaky tests.
 
 ##Usage
 
-In your Gemfile:  
-`gem 'minitest-retry'`
+In your Gemfile:
+`gem 'minitest-optional_retry'`
 
 Simpy include the main module in the test classes you want to automatically
 retry e.g.:
 
 ```
-require 'minitest-retry'
+require 'minitest-optional_retry'
 class ArticleTest < ActiveSupport::TestCase
-  include Minitest::Retry
+  include Minitest::OptionalRetry
 end
 ```
 
