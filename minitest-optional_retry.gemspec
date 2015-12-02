@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'minitest/version'
+require 'minitest/optional_retry/version'
 
 Gem::Specification.new do |s|
   s.name          = 'minitest-optional_retry'
