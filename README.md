@@ -19,7 +19,7 @@ retry e.g.:
 ```
 require 'minitest-optional_retry'
 class ArticleTest < ActiveSupport::TestCase
-  include Minitest::OptionalRetry
+  extend Minitest::OptionalRetry
 end
 ```
 
