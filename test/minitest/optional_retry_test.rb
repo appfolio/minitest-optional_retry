@@ -1,11 +1,11 @@
 require 'helper'
 
 module Minitest
-  class TestRetry < MetaMetaMetaTestCase
+  class OptionalRetryTest < MetaMetaMetaTestCase
     def test_retry
       @tu =
           Class.new Minitest::Test do
-            extend Retry
+            extend OptionalRetry
 
             def test_eventually_passes
               @@cnt ||= 0

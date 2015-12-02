@@ -1,6 +1,6 @@
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
-require 'minitest-retry'
+require 'minitest/optional_retry'
 
 #borrowed from minitest testing code
 require "tempfile"

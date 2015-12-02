@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 
 module Minitest
-  module Retry
+  module OptionalRetry
     def run_one_method(klass, method_name, reporter)
       report_result = nil
       3.times do
