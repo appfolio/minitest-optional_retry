@@ -13,3 +13,4 @@ updates:
   pull-request-branch-name:
     separator: "-"
   registries: "*"
+  open-pull-requests-limit: 0
